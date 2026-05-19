@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Papelaria Premium</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#222;
+    }
+
+    header{
+      background:#111;
+      color:white;
+      padding:25px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:42px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      color:#ccc;
+    }
+
+    nav{
+      background:#1f1f1f;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ffd700;
+    }
+
+    .banner{
+      width:100%;
+      height:350px;
+      background:url('https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=1600') center/cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      text-shadow:2px 2px 10px black;
+      font-size:40px;
+      font-weight:bold;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+      padding:40px 20px;
+    }
+
+    .titulo{
+      margin-bottom:30px;
+      font-size:32px;
+      text-align:center;
+    }
+
+    .produtos{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .conteudo{
+      padding:20px;
+    }
+
+    .conteudo h2{
+      margin-bottom:15px;
+      font-size:24px;
+    }
+
+    .conteudo p{
+      margin-bottom:15px;
+      line-height:1.6;
+      color:#555;
+    }
+
+    .botao{
+      display:inline-block;
+      background:#111;
+      color:white;
+      padding:12px 20px;
+      border-radius:8px;
+      text-decoration:none;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .botao:hover{
+      background:#ffd700;
+      color:black;
+    }
+
+    .video-section{
+      margin-top:60px;
+    }
+
+    .video-container{
+      position:relative;
+      padding-bottom:56.25%;
+      height:0;
+      overflow:hidden;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .video-container iframe{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+
+    footer{
+      background:#111;
+      color:#ccc;
+      text-align:center;
+      padding:25px;
+      margin-top:60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Papelaria Premium</h1>
+    <p>Os melhores artigos de papelaria em um só lugar</p>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Produtos</a>
+    <a href="#">Promoções</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <section class="banner">
+    Criatividade começa no papel
+  </section>
+
+  <main class="container">
+
+    <h2 class="titulo">Produtos em Destaque</h2>
+
+    <div class="produtos">
+
+      <!-- PRODUTO 1 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=1200" alt="Caderno Premium">
+
+        <div class="conteudo">
+          <h2>Caderno Premium</h2>
+
+          <p>
+            Caderno elegante para estudos, anotações e organização diária.
+          </p>
+
+          <a href="https://SEULINKAQUI.com" target="_blank" class="botao">
+            Comprar Agora
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUTO 2 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200" alt="Kit Canetas">
+
+        <div class="conteudo">
+          <h2>Kit Canetas Coloridas</h2>
+
+          <p>
+            Canetas premium para lettering, desenho e organização criativa.
+          </p>
+
+          <a href="https://SEULINKAQUI.com" target="_blank" class="botao">
+            Ver Oferta
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUTO 3 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200" alt="Planner">
+
+        <div class="conteudo">
+          <h2>Planner Executivo</h2>
+
+          <p>
+            Planeje metas, rotina e produtividade com estilo profissional.
+          </p>
+
+          <a href="https://SEULINKAQUI.com" target="_blank" class="botao">
+            Comprar
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ÁREA DE VÍDEO -->
+    <section class="video-section">
+
+      <h2 class="titulo">Vídeo em Destaque</h2>
+
+      <div class="video-container">
+
+        <!-- TROQUE O LINK DO YOUTUBE -->
+        <iframe 
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Vídeo Papelaria"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Papelaria Premium — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
